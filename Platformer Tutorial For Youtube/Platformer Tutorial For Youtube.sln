@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platformer Tutorial For Youtube.CSharp.Plugins", "Platformer Tutorial For Youtube.CSharp.Plugins.csproj", "{231B1517-240B-0FAB-7C82-DDEDB327B235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platformer Tutorial For Youtube.CSharp", "Platformer Tutorial For Youtube.CSharp.csproj", "{35A94445-172D-0A6C-81B1-A5AF2138413F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platformer Tutorial For Youtube.CSharp.Editor", "Platformer Tutorial For Youtube.CSharp.Editor.csproj", "{7745AB5F-E42D-DA5A-D2C8-2B4D6974329F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{231B1517-240B-0FAB-7C82-DDEDB327B235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{231B1517-240B-0FAB-7C82-DDEDB327B235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{231B1517-240B-0FAB-7C82-DDEDB327B235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{231B1517-240B-0FAB-7C82-DDEDB327B235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35A94445-172D-0A6C-81B1-A5AF2138413F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A94445-172D-0A6C-81B1-A5AF2138413F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A94445-172D-0A6C-81B1-A5AF2138413F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A94445-172D-0A6C-81B1-A5AF2138413F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7745AB5F-E42D-DA5A-D2C8-2B4D6974329F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7745AB5F-E42D-DA5A-D2C8-2B4D6974329F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7745AB5F-E42D-DA5A-D2C8-2B4D6974329F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7745AB5F-E42D-DA5A-D2C8-2B4D6974329F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
