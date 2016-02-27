@@ -69,6 +69,7 @@ public class Creature : MonoBehaviour
 
         yield return null;
     }
+
    
     void Awake()
     {
@@ -81,5 +82,8 @@ public class Creature : MonoBehaviour
 
     }
 
+    
+
 
 }
+ 
