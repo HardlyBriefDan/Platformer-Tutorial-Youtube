@@ -6,7 +6,8 @@ public class Creature : MonoBehaviour
 {
 
     public bool isIdle = true;
-
+    public bool isChasing = false;
+  
     //Raycast Code
    // private RaycastHit2D rayCastHit;
    // private const float RAYCASTDIST = 5f; good coding practice to not hard code values
@@ -70,6 +71,20 @@ public class Creature : MonoBehaviour
         yield return null;
     }
 
+    //Chase State
+    public virtual IEnumerator Chase(GameObject go)
+    {
+        isIdle = false;
+        isChasing = true;
+        Debug.Log(this.gameObject.name + " is chasing " + go.gameObject.name);
+        while (isChasing)
+        {
+            Debug.Log("HEY!");
+            yield return null;
+        }
+        yield return null;
+    }
+
    
     void Awake()
     {
@@ -82,7 +97,25 @@ public class Creature : MonoBehaviour
 
     }
 
-    
+    //as soon as a collider enters the collider attached to this game object this method is called once per collider
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log(this.gameObject.name + " spotted " + other.gameObject.name);
+        if(other.gameObject.name == "CharacterRobotBoy")
+            StartCoroutine(Chase(other.gameObject));
+    }
+
+    //this is called when a collider leaves the collider set as a trigger
+    void OnTriggerExit2D(Collider2D other)
+    {
+        Debug.Log(this.gameObject.name + " is searching.");
+    }
+
+    //this is called when a collider sits in the trigger
+    /*void OnTriggerStay2D(Collider2D other)
+    {
+        Debug.Log(this.gameObject.name + " chasing " + other.gameObject.name);
+    }*/
 
 
 }
